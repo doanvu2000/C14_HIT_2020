@@ -1,3 +1,4 @@
+//Mọi người đọc file HinhThoi.txt để hiểu rõ hơn nhé
 #include <iostream>
 using namespace std;
 void hinh_thoi(int n){
