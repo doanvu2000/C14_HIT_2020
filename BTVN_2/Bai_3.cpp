@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
-int nhap(){
-	int x;
+void nhap(int &x){
 	do{
 		cout<<"nhap so nguyen duong: ";cin>>x;
 		if(x<=0) cout<<"nhap lai"<<endl;
@@ -38,8 +37,8 @@ int UCLN(int a, int b){
 //}
 int main(){
 	int tu_so,mau_so;
-	tu_so = nhap();
-	mau_so = nhap();
+	nhap(tu_so);
+	nhap(mau_so);
 	int ucln = UCLN(tu_so, mau_so);
 	tu_so /= ucln;
 	mau_so /= ucln;
