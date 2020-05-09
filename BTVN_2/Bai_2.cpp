@@ -14,7 +14,7 @@ void phan_tich(int n){
 	int i = 2;
 	while(n>1){
 		while(n%i==0){
-		//neu n chia het cho i thi ta se giam n di i lan va in ra
+		//nếu n chia hết cho i thì sẽ giảm n đi i lần
 			n/=i;
 			if (n>1) cout<<i<<"*";
 			else cout<<i;
