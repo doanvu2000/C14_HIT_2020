@@ -1,0 +1,27 @@
+n: độ dài mỗi nửa
+Phần trên:
+i: 1 -> n
+Ở dòng thứ i thì in ra n-i dấu cách và 2*i -1 dấu *
+Phần dưới:
+sẽ có 1 dòng dài nhất ở phần trên nên 
+i: 1-> n -1
+dòng thứ i sẽ in ra i dấu cách và (2*n-1-2*i) dấu *
+
+void hinh_thoi(int n){
+	//nua tren
+	for(int i=1;i<=n;i++){
+		for(int j=1;j<=n-i;j++)
+			cout<<" ";
+		for(int j=1;j<=2*i-1;j++)
+			cout<<"*";
+		cout<<endl;
+	}
+	//nua duoi
+	for(int i=1;i<=n-1;i++){
+		for(int j=1;j<=i;j++)
+			cout<<" ";
+		for(int j=1;j<=2*n-1-2*i;j++)
+			cout<<"*";
+		cout<<endl;
+	}
+}
